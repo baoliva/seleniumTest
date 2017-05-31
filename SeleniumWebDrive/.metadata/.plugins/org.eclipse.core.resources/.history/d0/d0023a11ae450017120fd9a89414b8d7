@@ -1,0 +1,30 @@
+package Pruebas;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxProfile;
+
+public class Prueba1 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		//FirefoxProfile ff = new FirefoxProfile(); 
+		//ff.setAcceptUntrustedCertificates(true);
+		//WebDriver driver = new FirefoxDriver(ff);
+		
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\blankyliv\\Desktop\\chrome\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://ecuador.patiotuerca.com/ptx/");
+		
+		System.out.println("................ Waiting for loadin page");
+		Thread.sleep(3000);
+		WebElement element = driver.findElement(By.className("tab-motor-credit"));
+
+
+	}
+
+}

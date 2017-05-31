@@ -1,0 +1,32 @@
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import bsh.Console;
+
+
+public class TestAlert {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+       WebDriver driver = new FirefoxDriver();       
+       driver.manage().window().maximize();       
+       driver.get("http://www.ksrtc.in/oprs-web/guest/home.do?h=1");
+       
+       System.out.println("................ antes del sleep");
+       Thread.sleep(3000);
+       System.out.println("................ despues del sleep");
+
+       System.out.println(driver.findElement(By.id("searchBtn")));
+
+       driver.findElement(By.id("searchBtn")).submit();
+       Alert alert = driver.switchTo().alert();
+       alert.accept();
+		
+		
+
+	}
+
+}

@@ -1,0 +1,38 @@
+package com.mystore.product;
+
+public class ProductTest1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Product iphone = new Product();
+		Product desktop = new Product();
+		
+		iphone.name="iphone";
+		iphone.price= 399.0;
+		iphone.skuID="iphone1";
+		
+		System.out.print(iphone.name);
+		System.out.print(iphone.price);
+		System.out.print(iphone.skuID);
+		
+		desktop.name="desktop";
+		desktop.price= 199.0;
+		desktop.skuID="desktop1";
+		
+		System.out.print(desktop.name);
+		System.out.print(desktop.price);
+		System.out.print(desktop.skuID);
+		
+		iphone.purchase(3);
+		desktop.purchase(5);
+		
+		System.out.print(iphone.calculatePrice(2));
+		System.out.print(desktop.calculatePrice(2));
+		
+		
+
+	}
+	
+	
+
+}
