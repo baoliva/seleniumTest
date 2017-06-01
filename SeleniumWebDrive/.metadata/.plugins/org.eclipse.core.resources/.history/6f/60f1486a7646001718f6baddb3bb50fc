@@ -70,12 +70,9 @@ public class Prueba1 {
 			   //Select RadioButton
 				JavascriptExecutor js = (JavascriptExecutor) driver;
 				WebElement radioisClient1 = driver.findElement(By.id("isClient1"));
-				radioisClient1.click();
-				Thread.sleep(400);
-				WebElement termsAndConditions = driver.findElement(By.id("termsAndConditions"));
-				termsAndConditions.click();
-//				js.executeScript("document.getElementById('isClient1').setAttribute('class', 'radio-container right checked')");
-//				js.executeScript("document.getElementById('termsAndConditions').setAttribute('class', 'check-container checked visible')");
+				radioisClient1.clear();
+				js.executeScript("document.getElementById('isClient1').setAttribute('class', 'radio-container right checked')");
+				js.executeScript("document.getElementById('termsAndConditions').setAttribute('class', 'check-container checked visible')");
 				
 				//Next ...
 				WebElement btnNextStep=driver.findElement(By.cssSelector("button.next-button"));

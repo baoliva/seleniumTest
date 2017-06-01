@@ -1,16 +1,11 @@
 package Pruebas;
 
-
-
-import java.util.List;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
-
+//import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxProfile;
 
 public class Prueba1 {
 
@@ -53,7 +48,7 @@ public class Prueba1 {
 
 				// Open login modal
 				WebElement btnFinance = driver.findElement(By
-						.cssSelector("a.send-calculator-data"));
+						.cssSelector("#sendCalculatorData"));
 				btnFinance.click();
 
 				// Login user
@@ -65,24 +60,9 @@ public class Prueba1 {
 				//Button login action
 				WebElement btnLogin = driver.findElement(By.id("btnLogin"));
 				btnLogin.click();
-				Thread.sleep(3000);
 				
-			   //Select RadioButton
-				JavascriptExecutor js = (JavascriptExecutor) driver;
-				WebElement radioisClient1 = driver.findElement(By.id("isClient1"));
-				radioisClient1.click();
-				Thread.sleep(400);
-				WebElement termsAndConditions = driver.findElement(By.id("termsAndConditions"));
-				termsAndConditions.click();
-//				js.executeScript("document.getElementById('isClient1').setAttribute('class', 'radio-container right checked')");
-//				js.executeScript("document.getElementById('termsAndConditions').setAttribute('class', 'check-container checked visible')");
-				
-				//Next ...
-				WebElement btnNextStep=driver.findElement(By.cssSelector("button.next-button"));
-				btnNextStep.click();
-							
-			} 
-			else {
+                
+			} else {
 				System.out
 						.println(".......... ELEMENT:firstCardVehicleElement is Disabled");
 			}
