@@ -69,7 +69,7 @@ public class Prueba1 {
 
 				// Select RadioButton
 				Random r = new Random();
-				Integer numClient = r.nextInt(2);
+				Integer numClient = 2;//r.nextInt(2);
 				if(numClient<=1) numClient = 1;
 //				WebElement radioisClient1 = driver.findElement(By.id("isClient1"));
 //				WebElement radioisClient1 = driver.findElement(By.id("isClient2"));
