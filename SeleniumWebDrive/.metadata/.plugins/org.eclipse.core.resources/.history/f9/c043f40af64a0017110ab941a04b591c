@@ -1,0 +1,27 @@
+package Pruebas;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class buscarAutos {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\blankyliv\\Desktop\\chrome\\chromedriver.exe");
+		
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.get("https://ecuador.patiotuerca.com/ptx/");
+		
+		Thread.sleep(10000);
+		
+		WebElement buscarChevrolet = driver.findElement(By.id("search-list"));
+		buscarChevrolet.sendKeys("chevrolet autos");
+
+	}
+
+}
