@@ -3164,3 +3164,25 @@ Contains: The project description file (.project) for 'hola' is missing.  This f
 
 !ENTRY org.eclipse.egit.ui 4 0 2017-06-13 20:39:15.780
 !MESSAGE Errors occurred while refreshing resources with the local file system.
+
+!ENTRY org.eclipse.ui.ide 4 4 2017-06-13 20:44:16.030
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2017-06-13 20:44:16.103
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2017-06-13 20:44:16.103
+!MESSAGE The project description file (.project) for 'hola' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SESSION 2017-06-13 20:44:18.517 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-13 20:44:41.309
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\blankyliv'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
