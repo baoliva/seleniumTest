@@ -1,0 +1,6 @@
+Feature: Test Duolingo smoke scenario
+
+   Scenario: Test Application Duolingo Registrer
+   Given Open Chronme and start application
+   When I enter valid data for registrer
+   Then click on the button to login

@@ -16,16 +16,16 @@
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="cucumber.api.junit.Cucumber"/>
 <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
-<fullyQualifiedTypeName name="cucumber.api.junit.Cucumber.Options"/>
 <fullyQualifiedTypeName name="cucumber.api.java.en.Given"/>
 <fullyQualifiedTypeName name="cucumber.api.java.en.When"/>
 <fullyQualifiedTypeName name="cucumber.api.java.en.Then"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
 <fullyQualifiedTypeName name="cucumber.api.CucumberOptions"/>
+<fullyQualifiedTypeName name="cucumber.api.junit.Cucumber.Options"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 </qualifiedTypeNameHistroy>
